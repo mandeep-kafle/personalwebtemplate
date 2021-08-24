@@ -96,7 +96,7 @@ const educationInfo = {
       schoolName: "Lovely Professional Univerity",
       logo: require("./assets/images/lpuLogo.png"),
       subHeader: "Bachelors in Computer Science and Engineering",
-      duration: "August 2016 - August 2020",
+      duration: "2021",
       desc: "Learnt Datastructures and Algorithms , Operating Systems, Machine Learning, worked on Projects, Got accepted one research paper for publishing. Won Esports competitions",
       descBullets: [
         
@@ -106,7 +106,7 @@ const educationInfo = {
       schoolName: "Army Public School Sukna",
       logo: require("./assets/images/stanfordLogo.png"),
       subHeader: "Higher Secondary Education",
-      duration: "September 2014 - April 2016",
+      duration: " April 2016",
       desc:
         "Ranked top 10% in the School (Board Exams). Participated in district level Cricket tournament, learnt Horseriding, swimming.",
       descBullets: []
@@ -177,6 +177,30 @@ const bigProjects = {
   subtitle: "",
   projects: [
     {
+      image: require("./assets/images/trello.png"),
+      projectName: "TaskManager",
+      projectDesc: "TaskManagement app like trello, User can create,read,update,delete tasks using drag and drop",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://task-manager-49702.web.app/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/pms.png"),
+      projectName: "Project Tracker",
+      projectDesc: "Project management system(website) user can keep track of all projects and their state,issues, with update and delete feature.",
+      footerLink: [
+        {
+          name: "View Code",
+          url: "https://github.com/mandeep-kafle/Project-tracker"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
       image: require("./assets/images/firegram.png"),
       projectName: "Firegram",
       projectDesc: "Firegram clone of social media app Instagram where user can read feed and post images.",
@@ -200,30 +224,8 @@ const bigProjects = {
         }
       ]
     },
-    {
-      image: require("./assets/images/apod.png"),
-      projectName: "",
-      projectDesc: "View Astronomy Image of the day by NASA and previous images with an immersive UIs.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://spacify-9e85f.web.app/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/pms.png"),
-      projectName: "Project Tracker",
-      projectDesc: "Project management system(website) user can keep track of all projects and their state,issues, with update and delete feature.",
-      footerLink: [
-        {
-          name: "View Code",
-          url: "https://github.com/mandeep-kafle/Project-tracker"
-        }
-        //  you can add extra buttons here.
-      ]
-    }
+   
+
   ],
   
   display: true // Set false to hide this section, defaults to true
