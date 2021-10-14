@@ -38,9 +38,7 @@ const skillsSection = {
   subTitle: "⚫ I have experience in building and deploying Software projects at large scale using Golang, AWS, Nodejs, Reactjs,C++.",
   skills: [
     emoji("⚫ Problem Solving,Datastructures and algorithms, Concurrency, Analyses"),
-    emoji(
-      "⚫  I love to spend my time coding complex problems which require good brain storming."
-    ),
+  
     emoji(
       "⚫ Other than Software development, I have broad intersets including Horseriding, Swimming, Cricket, Football, Esports , reading, storytelling, human-behaviour."
     )
