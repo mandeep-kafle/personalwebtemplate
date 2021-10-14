@@ -14,10 +14,10 @@ const greeting = {
   username: "Mandeep Kafle",
   title: "Hello from server side, Hi, I'm Mandeep Kafle",
   subTitle: emoji(
-    "I've curiosity towards analyses and problem solving, currently I am soaking up as much knowledge and practice to enhance my skills. I am interested in programming and software development."
+    "I've curiosity towards analyses and problem solving, I work as a Software Developer at Borderfree.io"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ZGsDX7QqGeglwf_vaPXqMyzNkaiW_mnC/view?ths=true",
+    "https://drive.google.com/file/d/1MFTVElZSuXfCoKhq9r26ScwwssgcSCup/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -26,8 +26,6 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/mandeep-kafle",
   linkedin: "https://www.linkedin.com/in/mandeep-kafle-956745193/",
-  // gmail: "mandeepkafle.9@gmail.com",
-  // gitlab: "https://gitlab.com/",
   facebook: "https://www.facebook.com/mandeep.kafle",
 
   display: true // Set true to display this section, defaults to false
@@ -37,10 +35,12 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What, I do",
-  subTitle: "⚫ I have experience in building and deploying projects using C++, Python, numpy, pandas, Javascript (ES-6), SQL, MVC , Nodejs, Reactjs, Material-ui, Bootstrap, MongoDB, ExpressJs, Firebase. I'm also enthusiatically looking for other frameworks or development principles that can be kept in my arsenal.",
+  subTitle: "⚫ I have experience in building and deploying Software projects at large scale using Golang, AWS, Nodejs, Reactjs,C++.",
   skills: [
-    emoji("⚫ Problem Solving,Datastructures and algorithms, DBMS, Analyses"),
-
+    emoji("⚫ Problem Solving,Datastructures and algorithms, Concurrency, Analyses"),
+    emoji(
+      "⚫  I love to spend my time coding complex problems which require good brain storming."
+    ),
     emoji(
       "⚫ Other than Software development, I have broad intersets including Horseriding, Swimming, Cricket, Football, Esports , reading, storytelling, human-behaviour."
     )
@@ -51,38 +51,41 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "C++",
-      fontAwesomeClassname: "fab fa-cuttlefish"
+      skillName: "Golang",
+      fontAwesomeClassname: ""
     },
     {
-      skillName: "sql",
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+ 
+    {
+      skillName: "DynamoDB",
       fontAwesomeClassname: "fas fa-database"
     },
-    {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-   
+    
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
     },
     {
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "SQL",
+      fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    }
+      skillName: "reactjs",
+      fontAwesomeClassname: "fab fa-react"
+    },
+  
+    {
+      skillName: "C++",
+      fontAwesomeClassname: "fab fa-cuttlefish"
+    },
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -97,19 +100,19 @@ const educationInfo = {
       logo: require("./assets/images/lpuLogo.png"),
       subHeader: "Bachelors in Computer Science and Engineering",
       duration: "2021",
-      desc: "Learnt Datastructures and Algorithms , Operating Systems, Machine Learning, worked on Projects, Got accepted one research paper for publishing. Won Esports competitions",
-      descBullets: [
+      // desc: "Learn't Datastructures and Algorithms , Operating Systems, Machine Learning, worked on Projects, Got research paper accepted for publishing. Won Esports competitions",
+      // descBullets: [
         
-      ]
+      // ]
     },
     {
       schoolName: "Army Public School Sukna",
       logo: require("./assets/images/stanfordLogo.png"),
       subHeader: "Higher Secondary Education",
       duration: " April 2016",
-      desc:
-        "Ranked top 10% in the School (Board Exams). Participated in district level Cricket tournament, learnt Horseriding, swimming.",
-      descBullets: []
+      // desc:
+      //   "Ranked top 10% in the School (Board Exams). Participated in district level Cricket tournament, learnt Horseriding, swimming.",
+      // descBullets: []
     }
   ]
 };
@@ -138,24 +141,35 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: false, //Set it to true to show workExperiences Section
+  display: true, //Set it to true to show workExperiences Section
   experience: [
     
     {
-      role: "Product Owner (PSD2)",
-      company: "Erste Bank",
-      companylogo: require("./assets/images/ersteLogo.jpg"),
-      date: "July 2019 – September 2020",
+      role: "Software Developer",
+      company: "Borderfree",
+      companylogo: require("./assets/images/Borderfree.jfif"),
+      date: "October 2021 – Currently Working Here",
       desc:
-        "I lead software developers building the API for the bank in order to fulfil the PSD2 regulation requirements."
+        "Working on Borderfree's Payments Gateway Building and simplfying payments infrastructure.   Technologies: Golang, AWS, DynamoDB",
+  
     },
     {
-      role: "Junior Information Security & Systems Representative",
-      company: "Vodafone",
-      companylogo: require("./assets/images/vodafoneLogo.png"),
-      date: "November 2018 – July 2019",
+      role: "Software Engineer",
+      company: "TalentXO",
+      companylogo: require("./assets/images/TalentXO.jfif"),
+      date: "August 2021 – October 2021",
       desc:
-        "I've conducted internal audit making sure the organization is compliant with the GDPR."
+        "Build UI and UX of TalentXO's HR dashboard for enable user to view and update job and candidate details. Technologies: Reactjs, HTML, CSS.",
+      
+    },
+    {
+      role: "FullStack Development Intern",
+      company: "Programming Pathshala",
+      companylogo: require("./assets/images/PP.jfif"),
+      date:  "May 2021 – August 2021",
+      desc:
+        "Designed and Development Coupon Code Management System, Successfully Integrated it with Programming Pathshala Website Technologies: Nodejs, PostgresSQL, Reactjs",
+      
     }
   ]
 };
@@ -167,19 +181,32 @@ const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: "drakosi99", // Change to your github username to view your profile in Contact Section.
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false// Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Projects",
+  
+  title: "Individual Projects",
   subtitle: "",
   projects: [
     {
+      // image: require("./assets/images/trello.png"),
+      projectName: "Dataware Housing Infrastructure",
+      projectDesc: "Dataware Housing Infrastucture using AWS (ApiGateway, DynamoDB & DBStream, S3, Redshift Spectrum)",
+      footerLink: [
+        {
+          name: "View Code And Description",
+          url: "https://github.com/mandeep-kafle/BorderFreeAssignment"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
       image: require("./assets/images/trello.png"),
       projectName: "TaskManager",
-      projectDesc: "TaskManagement app like trello, User can create,read,update,delete tasks using drag and drop",
+      projectDesc: "TaskManagement app, User can keep track of his/her tasks easy to use by drag and drop, powered by GraphQL",
       footerLink: [
         {
           name: "Visit Website",
@@ -191,23 +218,11 @@ const bigProjects = {
     {
       image: require("./assets/images/pms.png"),
       projectName: "Project Tracker",
-      projectDesc: "Project management system(website) user can keep track of all projects and their state,issues, with update and delete feature.",
+      projectDesc: "Project management system(website) user can keep track of all projects and their state,issues,bugs.",
       footerLink: [
         {
           name: "View Code",
           url: "https://github.com/mandeep-kafle/Project-tracker"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/firegram.png"),
-      projectName: "Firegram",
-      projectDesc: "Firegram clone of social media app Instagram where user can read feed and post images.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://instagramclone-d25cc.web.app/"
         }
         //  you can add extra buttons here.
       ]
@@ -353,9 +368,8 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss an oppurtunity, project or just want to say hi? My Inbox is open for all.",
-  number: "(+91) 9877946059",
-  email_address: "mandeepkafle.9@gmail.com"
+    "Wanna discuss about Technology, Project, Oppurtunity or just want to say hi? My Inbox is open for all.",
+  email_address: "mandeepkfle@gmail.com"
 };
 
 // Twitter Section
