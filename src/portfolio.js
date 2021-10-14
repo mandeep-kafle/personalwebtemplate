@@ -14,7 +14,7 @@ const greeting = {
   username: "Mandeep Kafle",
   title: "Hello from server side, Hi, I'm Mandeep Kafle",
   subTitle: emoji(
-    "I've curiosity towards analyses and problem solving, I work as a Software Developer at Borderfree.io. I love to spend my time coding complex problems which require good brain storming."
+    "I've curiosity towards analyses and problem solving,I love to spend my time coding complex problems which require good brain storming. I work as a Software Developer at Borderfree.io. "
   ),
   resumeLink:
     "https://drive.google.com/file/d/1MFTVElZSuXfCoKhq9r26ScwwssgcSCup/view?usp=sharing",
